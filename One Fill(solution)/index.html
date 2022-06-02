@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>One Fill Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>One Fill Puzzle</h1>
+		</div>
+		<div id="content-wrap">
+			<div id="left-bar">
+				<div id="inputs">
+					<div id="ratio">What is the ratio?<br>
+						Row : <input id="rows" type="number" name="rows" min="2" max="9"><br>
+						Col : <input id="cols" type="number" name="cols" min="2" max="9"><br>
+						<button id="get-ratio">Get</button>
+					</div>
+					<div id="start-pos">
+						Where is the Start Position?(drag the box)<br>
+						<button id="get-start">Place</button>
+					</div>
+					<div id="block-boxes">
+						Select Block Boxes!!!(double-click to select boxes)<br>
+						<button id="get-blocks">Remove</button>
+					</div>
+					<div id="solution">
+						Generate the Solution 
+						<button id="generate">Generate</button>
+					</div>
+				</div>
+			</div>
+			<div id="display">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
+		<div id="footer">
+			<h6>linhtetaung | May 2022</h6>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+<!-- <script type="text/javascript" src="algorithm.js"></script> -->
+</body>
+</html>
